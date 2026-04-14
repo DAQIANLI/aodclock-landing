@@ -68,11 +68,11 @@ header {
 /* ─── HERO ─── */
 .hero {
   min-height: 100svh;
-  padding: 7rem 2.5rem 3rem;
+  padding: 8rem 2.5rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
   position: relative;
   overflow: hidden;
 }
@@ -109,7 +109,7 @@ header {
 
 .clock-hm {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(4rem, 11vw, 10rem);
+  font-size: clamp(5rem, 14vw, 13rem);
   letter-spacing: -0.01em;
   color: var(--text);
   display: block;
@@ -124,7 +124,7 @@ header {
 
 .clock-sec {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.4rem, 3vw, 3rem);
   color: var(--accent);
   letter-spacing: 0.08em;
   opacity: 0.75;
@@ -192,13 +192,13 @@ header {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
 }
 
 .dl-card {
   width: 100%;
-  max-width: 400px;
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(255,255,255,0.025);
   padding: 2rem;
@@ -439,7 +439,7 @@ footer {
   }
   .hero-right { justify-content: flex-start; }
   .dl-card { max-width: 100%; }
-  .clock-hm { font-size: clamp(5rem, 22vw, 14rem); }
+  .clock-hm { font-size: clamp(5rem, 24vw, 16rem); }
   .clock-sec { font-size: clamp(1.4rem, 4vw, 3rem); }
 }
 
